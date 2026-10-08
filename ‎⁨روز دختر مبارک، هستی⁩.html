@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>روز دختر مبارک، هستی</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@300;400;600&display=swap">
+<style>
+:root{--bg:#f3e6d0;--ink:#2a1a10;--mut:#6b5039;--btn:#2a1a10;--btnt:#f3e6d0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d120b;--ink:#f3e6d0;--mut:#cdb596;--btn:#f3e6d0;--btnt:#2a1a10}}
+:root[data-theme="dark"]{--bg:#1d120b;--ink:#f3e6d0;--mut:#cdb596;--btn:#f3e6d0;--btnt:#2a1a10}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:#2a1a10;color:#f3e6d0;font:300 17px/2.1 Vazirmatn,Tahoma,sans-serif;overflow-x:hidden}
+h1,h2,.big,.show{font-family:Lalezar,Vazirmatn,sans-serif;font-weight:400;margin:0}
+p{margin:0 0 1em}
+button:focus-visible{outline:3px solid #f1c88a;outline-offset:3px}
+.hero{position:relative;overflow:hidden;height:100svh;min-height:560px;padding:12svh 24px 0;text-align:center;background:linear-gradient(#2a1a10 0,#6e3f1c 38%,#c8843a 68%,#f1c88a 88%,#f8dfb0)}
+.hero>h1,.hero>.sub{animation:fade 1.6s 1.2s both}
+h1{font-size:clamp(48px,13vw,96px);line-height:1.2;color:#fff3dc}
+.sub{margin-top:.8em;color:#f3e6d0;font-size:18px}
+.sun{position:absolute;left:50%;bottom:40px;width:min(62vw,300px,36svh);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 38%,#fffaf0,#ffe1ab 75%);box-shadow:0 0 90px 36px #ffd9964d;display:grid;place-items:start center;padding-top:22%;transform:translateX(-50%);animation:rise 2.6s cubic-bezier(.2,.8,.2,1) both}
+.sun span{font:400 clamp(30px,9vw,54px)/1.2 Lalezar,sans-serif;color:#2a1a10}
+.ground{position:absolute;left:0;right:0;bottom:0;height:84px;background:#2a1a10;direction:ltr}
+.ground::before{content:"";position:absolute;left:0;right:0;top:46px;border-top:2px dashed #c8843a}
+.bike{position:absolute;bottom:83px;left:20px;width:110px;color:#2a1a10;animation:ride 15s linear infinite}
+.sp{transform-box:fill-box;transform-origin:center;animation:spin 1.1s linear infinite}
+@keyframes rise{from{transform:translate(-50%,75%)}}
+@keyframes fade{from{opacity:0}}
+@keyframes ride{from{left:-130px}to{left:100%}}
+@keyframes spin{to{transform:rotate(360deg)}}
+.s{padding:84px 24px}
+.in{max-width:680px;margin:0 auto}
+h2{font-size:clamp(34px,8vw,56px);line-height:1.4;margin-bottom:.5em}
+.night p{color:#cdb596}
+.night h2{color:#fff3dc}
+.big{font-size:clamp(34px,9vw,64px);line-height:1.5;color:#fff3dc;margin-bottom:.4em}
+.gap{margin-top:2.4em}
+.tl{border-inline-start:2px solid #c8843a;padding-inline-start:26px;margin-top:36px}
+.st{position:relative;margin-bottom:34px}
+.st:last-child{margin-bottom:0}
+.st::before{content:"";position:absolute;inset-inline-start:-35px;top:14px;width:16px;height:16px;border-radius:50%;background:#f1c88a;box-shadow:0 0 0 6px #2a1a10}
+.st b{display:block;font:400 26px/1.6 Lalezar,sans-serif;color:#fff3dc}
+.st p{margin:0}
+.day{background:#c8843a;color:#2a1a10}
+.day h2,.day p{color:#2a1a10}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(56px,1fr));gap:10px;margin:28px 0}
+.grid button{aspect-ratio:1;border:2px solid #2a1a10;background:transparent;color:#2a1a10;border-radius:50%;font:600 18px Vazirmatn,sans-serif;cursor:pointer;transition:background .25s,color .25s,transform .25s}
+.grid button.on{background:#2a1a10;color:#f3e6d0}
+.grid button.cur{transform:scale(1.14)}
+.show{min-height:180px;display:grid;place-items:center;text-align:center;padding:30px 26px;background:#fbf1de;color:#2a1a10;border-radius:28px;font-size:clamp(24px,5.6vw,34px);line-height:1.9;transition:opacity .25s}
+.cnt{margin:14px 0 0;font-weight:600}
+.end{background:var(--bg);color:var(--ink);text-align:center}
+.end h2{color:var(--ink)}
+.end p{color:var(--mut)}
+.cta{border:0;border-radius:99px;padding:14px 34px;background:var(--btn);color:var(--btnt);font:600 18px Vazirmatn,sans-serif;cursor:pointer;margin-top:12px}
+.end .sig{font:400 30px Lalezar,sans-serif;color:var(--ink);margin:1.2em 0 0;direction:ltr}
+footer{background:#2a1a10;color:#cdb596;text-align:center;font-size:14px;padding:28px 24px}
+.pt{position:fixed;top:-40px;pointer-events:none;z-index:9;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(112vh) rotate(360deg);opacity:.5}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+<h1>روزت مبارک،<br>هستی</h1>
+<p class="sub">یه صفحه‌ی کوچیک، فقط برای تو.</p>
+<div class="sun"><span>۱۹ مهر</span></div>
+<div class="ground">
+<svg class="bike" viewBox="0 0 120 68" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<g class="sp"><circle cx="25" cy="47" r="18"/><path d="M25 29v36M7 47h36" stroke-width="1.5"/></g>
+<g class="sp"><circle cx="95" cy="47" r="18"/><path d="M95 29v36M77 47h36" stroke-width="1.5"/></g>
+<path d="M25 47h25l-8-24h38L50 47M80 23l15 24M36 20h12M80 23l-3-8h9"/>
+</svg>
+</div>
+</header>
+
+<section class="s night"><div class="in">
+<p class="big">«هستی» یعنی «تو تمام وجود منی».</p>
+<p>اسمت خودش یه جمله‌ست. هر بار صدات می‌کنم، انگار تمام وجودمو صدا می‌زنم؛ و این بهترین لحظه‌ی هر روزمه.</p>
+<h2 class="gap">قصه‌ی ما، کوتاه</h2>
+<div class="tl">
+<div class="st"><b>یه صبح، یه دوچرخه</b><p>همه‌چی از یه دوچرخه‌سواری شروع شد؛ یه آشنایی ساده که ساده نموند.</p></div>
+<div class="st"><b>پیام‌های تموم‌نشدنی</b><p>تلگرام شد جای همیشگیِ ما؛ از صبح تا شب.</p></div>
+<div class="st"><b>اولین قرار</b><p>چند ساعت کنار هم، و دلم نخواست تموم شه.</p></div>
+<div class="st"><b>حالا</b><p>تو اینجایی، و من خیلی خوش‌شانسم.</p></div>
+</div>
+</div></section>
+
+<section class="s day"><div class="in">
+<h2>۱۹ دلیل برای ۱۹ مهر</h2>
+<p>هر عدد رو بزن تا یه دلیل باز شه.</p>
+<div class="grid" id="grid"></div>
+<div class="show" id="show" aria-live="polite">یه عدد بزن 👆</div>
+<p class="cnt" id="ct">۰ از ۱۹</p>
+<p class="cnt" id="sec" hidden>و دلیل بیستم رو خودت خوب می‌دونی 🤎</p>
+</div></section>
+
+<section class="s end"><div class="in">
+<h2>روزت مبارک، خانومم</h2>
+<p>ممنون که هستی؛ هم توی اسمت، هم توی زندگیم.</p>
+<button class="cta" id="go">بزن اینجا 🤎</button>
+<p class="sig">— My Guy</p>
+</div></section>
+<footer>ساخته‌شده با 🤎 برای ۱۹ مهر ۱۴۰۵</footer>
+
+<script>
+const R=[
+"چون وقتی می‌خندی، دور و برت روشن‌تر می‌شه.",
+"چون اسمت خودش یه خبر خوبه: «تو هستی».",
+"چون یه صبح دوچرخه‌سواری، قشنگ‌ترین قصه رو شروع کرد.",
+"چون تا آخر عمرم با توام؛ همسرم تویی، و هیچ جای دنیا قشنگ‌تر از کنار تو نیست.",
+"چون نگاهت، دلمو هم آروم می‌کنه هم تند.",
+"چون عاشق اسب‌سواری‌ای؛ و خودت هم مثل اون اسبای اصیل، آزاد و باوقار و پرشوری.",
+"چون هر چی کاراملیه و کِرمی، یاد تو می‌افته.",
+"چون هر بار اسمت روی گوشیم می‌افته، بی‌اختیار لبخند می‌زنم.",
+"چون با تو، حتی یه مسیر ساده هم ماجراجویی می‌شه.",
+"چون به آدما و رابطه‌ها اهمیت می‌دی، و این خیلی کمیابه.",
+"چون هم آرومی هم پرانرژی، و من هر دوشو دوست دارم.",
+"چون وقتی بغلم می‌کنی، دنیا یه لحظه ساکت می‌شه.",
+"چون «My Guy» گفتنت، قشنگ‌ترین لقبیه که تا حالا گرفتم.",
+"چون واقعی‌ای؛ همون‌جور که هستی.",
+"چون تو باعث می‌شی بیدار شدن صبح یه دلیل داشته باشه.",
+"چون دوست دارم قصه‌ی هر روزمو اول برای تو تعریف کنم.",
+"چون با تو، ساده‌ترین لحظه‌ها هم قشنگ می‌شن.",
+"چون هم قوی‌ای، هم نازک‌دل؛ و همه‌شو با هم داری.",
+"چون امروز روز دختره، و برای من، دخترِ این قصه تویی."
+];
+const $=i=>document.getElementById(i),fa=n=>n.toLocaleString('fa-IR');
+const g=$('grid'),sh=$('show'),ct=$('ct'),seen=new Set();
+function burst(){for(let i=0;i<28;i++){const s=document.createElement('span');s.className='pt';s.textContent=['🤎','🌸','🚲','🐎','🐾','✨'][i%6];s.style.cssText='left:'+Math.random()*96+'vw;font-size:'+(18+Math.random()*18)+'px;animation-duration:'+(3+Math.random()*3)+'s;animation-delay:'+Math.random()+'s';document.body.appendChild(s);setTimeout(()=>s.remove(),8000)}}
+R.forEach((t,i)=>{
+const b=document.createElement('button');
+b.textContent=fa(i+1);b.setAttribute('aria-label','دلیل '+fa(i+1));
+b.onclick=()=>{
+g.querySelectorAll('.cur').forEach(x=>x.classList.remove('cur'));
+b.classList.add('on','cur');seen.add(i);
+sh.style.opacity=0;setTimeout(()=>{sh.textContent=t;sh.style.opacity=1},200);
+ct.textContent=fa(seen.size)+' از '+fa(R.length);
+if(seen.size===R.length){$('sec').hidden=false;burst()}
+};
+g.appendChild(b);
+});
+$('go').onclick=burst;
+</script>
+</body>
+</html>
